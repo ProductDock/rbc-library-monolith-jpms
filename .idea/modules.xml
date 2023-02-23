@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rbc-library-catalog/rbc-library-catalog.iml" filepath="$PROJECT_DIR$/rbc-library-catalog/rbc-library-catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rbc-library-monolith-jpms.iml" filepath="$PROJECT_DIR$/.idea/rbc-library-monolith-jpms.iml" />
+    </modules>
+  </component>
+</project>
