@@ -11,6 +11,7 @@
     <name>rbc-library-monolith-jpms</name>
 
     <modules>
+        <module>rbc-library</module>
         <module>rbc-library-catalog</module>
     </modules>
 
