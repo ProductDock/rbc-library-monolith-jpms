@@ -13,3 +13,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   flyway:
     url: jdbc:mysql://localhost:3308/catalog
+
+#From Gateway configs
+FRONTEND_URL: http://localhost:3000
+#From Gateway configs

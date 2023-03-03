@@ -1,4 +1,13 @@
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            scope: openid, email, profile
+    basic.enabled: false
   cloud:
     gcp:
       sql:
@@ -49,3 +58,14 @@ management:
     web:
       exposure:
         include: '*'
+
+# From gateway configs
+cors:
+  allowed:
+    origins: ${FRONTEND_URL}
+
+security:
+  front-to-gateway:
+    redirect-uri: ${FRONTEND_URL}
+
+# From gateway configs

@@ -12,8 +12,8 @@ import org.springframework.security.web.SecurityFilterChain;
 
 import java.security.interfaces.RSAPublicKey;
 
-@Configuration
-public class SecurityConfig {
+//@Configuration
+public class MicroserviceSecurityConfig {
 
     @Value("${jwt.public.key}")
     RSAPublicKey key;
