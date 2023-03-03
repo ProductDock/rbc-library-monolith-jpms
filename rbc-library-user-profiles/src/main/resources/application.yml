@@ -1,0 +1,39 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: user-profiles
+      host: ${MONGO_SERVER_URL}
+      port: ${MONGO_SERVER_PORT}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+      database: user-profiles
+
+security:
+  jwt:
+    user-profile:
+      private.key: file:${USER_PROFILES_JWT_PRIVATE_KEY}
+      public.key: file:${USER_PROFILES_JWT_PUBLIC_KEY}
+      known-issuer: ${JWT_ISSUER}
+    google:
+      jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+      known-issuer: https://accounts.google.com
+
+logging:
+  level:
+    com.productdock.library.user.profiles: INFO
+
+file-logging-enabled: ${LOG_TO_FILE}
+
+mongock:
+  change-logs-scan-package: com.productdock.library.user.profiles.config.dbmigrations
+
+management:
+  server:
+    port: 8087
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'

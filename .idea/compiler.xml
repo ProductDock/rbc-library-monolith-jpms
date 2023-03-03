@@ -9,18 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rbc-library" />
         <module name="rbc-library-catalog" />
+        <module name="rbc-library-user-profiles" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="rbc-library" target="17" />
       <module name="rbc-library-catalog" target="17" />
       <module name="rbc-library-monolith-jpms" target="1.5" />
+      <module name="rbc-library-user-profiles" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rbc-library" options="-parameters" />
       <module name="rbc-library-catalog" options="-parameters" />
+      <module name="rbc-library-user-profiles" options="-parameters" />
     </option>
   </component>
 </project>

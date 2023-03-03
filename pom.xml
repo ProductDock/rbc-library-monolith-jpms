@@ -13,6 +13,7 @@
     <modules>
         <module>rbc-library</module>
         <module>rbc-library-catalog</module>
+        <module>rbc-library-user-profiles</module>
     </modules>
 
 </project>
