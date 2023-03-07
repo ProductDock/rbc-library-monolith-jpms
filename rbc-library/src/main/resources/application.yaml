@@ -13,6 +13,16 @@ spring:
       sql:
         database-name: catalog
         instance-connection-name: ${GCP_SQL_INSTANCE_CONNECTION_NAME}
+  #User Profiles#
+  data:
+    mongodb:
+      authentication-database: user-profiles
+      host: ${MONGO_SERVER_URL}
+      port: ${MONGO_SERVER_PORT}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+      database: user-profiles
+  #User Profiles#
   flyway:
     user: ${MYSQL_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
@@ -69,3 +79,8 @@ security:
     redirect-uri: ${FRONTEND_URL}
 
 # From gateway configs
+
+#User Profiles#
+mongock:
+  change-logs-scan-package: com.productdock.library.user.profiles.config.dbmigrations
+#User Profiles#
