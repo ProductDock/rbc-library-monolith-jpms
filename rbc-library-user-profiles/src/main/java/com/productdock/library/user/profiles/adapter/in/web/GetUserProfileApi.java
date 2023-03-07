@@ -1,7 +1,8 @@
 package com.productdock.library.user.profiles.adapter.in.web;
 
 import com.productdock.library.user.profiles.application.port.in.GetUserProfileQuery;
-import com.productdock.library.user.profiles.config.UserProfileAuthenticationToken;
+//import com.productdock.library.user.profiles.config.UserProfileAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,14 +16,14 @@ public record GetUserProfileApi(GetUserProfileQuery getUserProfileQuery,
                                 UserProfileMapper mapper) {
 
     @GetMapping("/user-info")
-    public LoggedInUserDto getLoggedInUserProfile(UserProfileAuthenticationToken authentication) {
+    public LoggedInUserDto getLoggedInUserProfile(Authentication authentication) {
         var userProfile = authentication.getPrincipal();
 
-        return new LoggedInUserDto(
-                userProfile.getFullName(),
-                userProfile.getProfilePicture(),
-                userProfile.getEmail(),
-                userProfile.getRole());
+        return new LoggedInUserDto("milica", "", "mail", "MY ROLE");
+//                userProfile.getFullName(),
+//                userProfile.getProfilePicture(),
+//                userProfile.getEmail(),
+//                userProfile.getRole());
     }
 
     @GetMapping
