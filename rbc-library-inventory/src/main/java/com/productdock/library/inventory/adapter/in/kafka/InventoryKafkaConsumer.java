@@ -12,11 +12,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Slf4j
-public record KafkaConsumer(UpdateBookStockUseCase updateBookStockUseCase,
-                            BookRentalsMapper bookRentalsMapper,
-                            ObjectMapper objectMapper) {
+public record InventoryKafkaConsumer(UpdateBookStockUseCase updateBookStockUseCase,
+                                     BookRentalsMapper bookRentalsMapper,
+                                     ObjectMapper objectMapper) {
 
-    @KafkaListener(topics = "${spring.kafka.topic.book-status}")
+    @KafkaListener(topics = "${spring.kafka.topic.book-status}", groupId = "${kafka-consumer-factory.group-id.search}")
     public synchronized void listen(ConsumerRecord<String, String> message) throws JsonProcessingException {
         log.debug("Received kafka message: {}", message);
 
