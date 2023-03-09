@@ -17,7 +17,7 @@
       <module name="rbc-library" target="17" />
       <module name="rbc-library-catalog" target="17" />
       <module name="rbc-library-monolith-jpms" target="1.5" />
-      <module name="rbc-library-search" target="1.8" />
+      <module name="rbc-library-search" target="17" />
       <module name="rbc-library-user-profiles" target="17" />
     </bytecodeTargetLevel>
   </component>

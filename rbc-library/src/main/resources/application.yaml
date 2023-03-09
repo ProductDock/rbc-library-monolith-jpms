@@ -39,12 +39,18 @@ spring:
       client-id: kafka-message-producer
       acks: all
     topic:
+      insert-book: insert-book
+      book-status: book-status
+      book-availability: book-availability
       book-rating: book-rating
-
+      book-recommendation: book-recommendation
   jpa:
     hibernate:
       ddl-auto: validate
-
+  #Search
+  elasticsearch:
+    uris: ${ELASTICSEARCH_SERVER_URL}
+  #Search
 server:
   error:
     include-message: always
