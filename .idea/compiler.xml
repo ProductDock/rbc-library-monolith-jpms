@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rbc-library" />
+        <module name="rbc-library-search" />
         <module name="rbc-library-catalog" />
         <module name="rbc-library-user-profiles" />
       </profile>
@@ -16,6 +17,7 @@
       <module name="rbc-library" target="17" />
       <module name="rbc-library-catalog" target="17" />
       <module name="rbc-library-monolith-jpms" target="1.5" />
+      <module name="rbc-library-search" target="1.8" />
       <module name="rbc-library-user-profiles" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rbc-library" options="-parameters" />
       <module name="rbc-library-catalog" options="-parameters" />
+      <module name="rbc-library-search" options="-parameters" />
       <module name="rbc-library-user-profiles" options="-parameters" />
     </option>
   </component>
