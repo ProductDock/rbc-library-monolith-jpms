@@ -45,8 +45,6 @@ Q
 !rbc-library-user-profiles/pom.xml,a/e/ae902f364e48871ab5a8d1e372d3866f270d26dd
 v
 Frbc-library/src/main/java/com/productdock/security/SecurityConfig.java,9/6/968cc713d7deade003a64a3a5978c7c77a43fce8
-g
-7rbc-library-user-profiles/rbc-library-user-profiles.iml,0/f/0fe17a61aaa1426b8d253e2e3e1095dd1d60a5f8
 £
 srbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/adapter/in/web/GetUserProfileApi.java,2/c/2cfa2d736e09ce495777a612d5810b4911cdb1ed
 £
@@ -67,8 +65,6 @@ urbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafk
 qrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/mappers/RentalMessageMapper.java,2/5/25b3850c6109a8bfd7e248d825c5e4192fe58ec5
 £
 srbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/config/KafkaListenerAssembler.java,8/a/8ab6572fd1a64fe5a759aa9e5ff3291b46565ea6
-¡
-qrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/config/KafkaConsumersConfig.java,2/9/299ca8a6b37c29aa91f7aa0c5a33c1d60e9b78b3
 ¨
 xrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/web/mapper/BookSearchSuggestionDtoMapper.java,1/f/1ff22feaa0e9e7f1dff4b7b844e9d51eb9112381
 œ
@@ -101,10 +97,6 @@ jrbc-library-search/src/main/java/com/productdock/library/search/application/por
 jrbc-library-search/src/main/java/com/productdock/library/search/application/port/in/AddNewBookUseCase.java,3/7/37beea49a1258b1ae66ef442952999868e33cb52
 –
 frbc-library-search/src/main/java/com/productdock/library/search/application/port/in/GetBooksQuery.java,e/b/eb60647cc59809bc1236cdd80a99d8022088b8ee
-¦
-vrbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/BookDocumentElasticRepository.java,2/4/24d9efb620e9b55be269bc6beb37c741391bf3be
-ž
-nrbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/BookElasticRepository.java,d/e/de905238b558b5970d9912d0097240f5ef8672a0
 ›
 krbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/BookDocumentMapper.java,a/3/a33389575b0f27ae4108f50635b53de9ce0ea0a5
 •
@@ -129,16 +121,10 @@ prbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafk
 lrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/messages/RentalMessage.java,2/5/258d6598b5eb75a7299e1723847d261b5235743f
 ^
 .rbc-library-search/src/main/java/.editorconfig,2/d/2d59393b127831315fbf9fe289378e2823b24567
-K
-rbc-library/rbc-library.iml,2/4/2470e64f84dd4e8b8633758fb7af88dd55daf9c3
 —
 grbc-library-search/src/main/java/com/productdock/library/search/config/MicroservicesSecurityConfig.java,f/d/fdd1f5231d16ed884738388da7980f64d7ba89cf
 ˆ
 Xrbc-library-catalog/src/main/java/com/productdock/config/MicroserviceSecurityConfig.java,7/8/78430a96ed3acd77e708477171fd21bc567b9b92
-’
-brbc-library-search/src/main/java/com/productdock/library/search/MicroserviceSearchApplication.java,e/1/e1d997126dce74226cd626c9416c94d516daeab3
-…
-Urbc-library-catalog/src/main/java/com/productdock/MicroserviceCatalogApplication.java,4/c/4cc4b06a134d15458271f815dd5f43dfe9c3a333
 ¦
 vrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/MicroserviceUserProfilesApplication.java,4/6/46b9c4133bdb7c3865763cd541f152704ed222b4
 q

@@ -27,4 +27,5 @@ MONGO_PASSWORD: root1
 
 #Search
 ELASTICSEARCH_SERVER_URL: localhost:9200
+KAFKA_SERVER_URL: localhost:9093
 #Search
