@@ -19,7 +19,8 @@ jwt:
 
 kafka-consumer-factory:
   auto-offset-reset: latest
-  group-id: search-group
+  group-id:
+    search: search-group
 
 logging:
   level:

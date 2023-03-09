@@ -63,8 +63,6 @@ C
 urbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/mappers/InsertBookMessageMapper.java,b/f/bf1859b00ff4a25b76695802d4da24e03e50b87f
 ¡
 qrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/mappers/RentalMessageMapper.java,2/5/25b3850c6109a8bfd7e248d825c5e4192fe58ec5
-£
-srbc-library-search/src/main/java/com/productdock/library/search/adapter/in/kafka/config/KafkaListenerAssembler.java,8/a/8ab6572fd1a64fe5a759aa9e5ff3291b46565ea6
 ¨
 xrbc-library-search/src/main/java/com/productdock/library/search/adapter/in/web/mapper/BookSearchSuggestionDtoMapper.java,1/f/1ff22feaa0e9e7f1dff4b7b844e9d51eb9112381
 œ
@@ -97,10 +95,6 @@ jrbc-library-search/src/main/java/com/productdock/library/search/application/por
 jrbc-library-search/src/main/java/com/productdock/library/search/application/port/in/AddNewBookUseCase.java,3/7/37beea49a1258b1ae66ef442952999868e33cb52
 –
 frbc-library-search/src/main/java/com/productdock/library/search/application/port/in/GetBooksQuery.java,e/b/eb60647cc59809bc1236cdd80a99d8022088b8ee
-›
-krbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/BookDocumentMapper.java,a/3/a33389575b0f27ae4108f50635b53de9ce0ea0a5
-•
-erbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/BookDocument.java,2/e/2ef123c157d03cd8a02d482c6e5689e3ceda0313
 ¢
 rrbc-library-search/src/main/java/com/productdock/library/search/adapter/out/elastic/query/SearchQueryExecutor.java,0/4/04b046b8a30c93d8297ddd40b01aea1bb9d3b294
 ¡

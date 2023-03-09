@@ -18,7 +18,7 @@ public class KafkaConsumersConfig {
     @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapAddress;
 
-    @Value("${kafka-consumer-factory.group-id}")
+    @Value("${kafka-consumer-factory.group-id.search}")
     private String consumerGroup;
 
     @Value("${kafka-consumer-factory.auto-offset-reset}")

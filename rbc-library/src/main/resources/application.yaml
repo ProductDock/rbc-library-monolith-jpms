@@ -67,7 +67,8 @@ jwt:
 #Search
 kafka-consumer-factory:
   auto-offset-reset: latest
-  group-id: search-group
+  group-id:
+    search: search-group
 #Search
 
 management:
