@@ -78,6 +78,7 @@ kafka-consumer-factory:
   auto-offset-reset: latest
   group-id:
     search: search-group
+    inventory: inventory-group
 #Search
 
 management:
