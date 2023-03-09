@@ -55,8 +55,6 @@ Zrbc-library-catalog/src/main/java/com/productdock/adapter/out/kafka/BookRatingM
 jrbc-library-catalog/src/main/java/com/productdock/application/port/out/messaging/BookMessagingOutPort.java,6/7/6782ab81305f914ceab75832eff1bfc8dd2055c5
 “
 crbc-library-catalog/src/main/java/com/productdock/adapter/out/kafka/BookRatingMessagePublisher.java,2/0/20aa97093d25bd1ec03aeee8e0e47ce59eb5fc08
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 C
 rbc-library/pom.xml,b/b/bbf3715089b5e45e4e4e28db1324ee4a989cad21
 ¥
