@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/rbc-library/rbc-library.iml" filepath="$PROJECT_DIR$/rbc-library/rbc-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/rbc-library-catalog/rbc-library-catalog.iml" filepath="$PROJECT_DIR$/rbc-library-catalog/rbc-library-catalog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rbc-library-monolith-jpms.iml" filepath="$PROJECT_DIR$/.idea/rbc-library-monolith-jpms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rbc-library-search/rbc-library-search.iml" filepath="$PROJECT_DIR$/rbc-library-search/rbc-library-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/rbc-library-user-profiles/rbc-library-user-profiles.iml" filepath="$PROJECT_DIR$/rbc-library-user-profiles/rbc-library-user-profiles.iml" />
     </modules>
   </component>
