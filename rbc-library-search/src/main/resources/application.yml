@@ -1,0 +1,39 @@
+spring:
+  kafka:
+    enabled: true
+    bootstrap-servers: ${KAFKA_SERVER_URL}
+    value-seriliazer: org.apache.kafka.common.serialization.StringSerializer
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    topic:
+      insert-book: insert-book
+      book-status: book-status
+      book-availability: book-availability
+      book-rating: book-rating
+      book-recommendation: book-recommendation
+  elasticsearch:
+    rest:
+      uris: ${ELASTICSEARCH_SERVER_URL}
+
+jwt:
+  public.key: file:${USER_PROFILES_JWT_PUBLIC_KEY}
+
+kafka-consumer-factory:
+  auto-offset-reset: latest
+  group-id: search-group
+
+logging:
+  level:
+    com.productdock.library.search: INFO
+
+file-logging-enabled: ${LOG_TO_FILE}
+
+management:
+  server:
+    port: 8087
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
