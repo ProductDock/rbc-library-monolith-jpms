@@ -1,13 +1,13 @@
-package com.productdock.library.search;
+package com.productdock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class SearchApplication {
+//@SpringBootApplication
+public class MicroserviceCatalogApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SearchApplication.class, args);
+        SpringApplication.run(MicroserviceCatalogApplication.class, args);
     }
 
 }
