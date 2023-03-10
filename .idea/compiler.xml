@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rbc-library" />
         <module name="rbc-library-search" />
+        <module name="rbc-library-inventory" />
         <module name="rbc-library-catalog" />
         <module name="rbc-library-user-profiles" />
       </profile>
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="rbc-library" target="17" />
       <module name="rbc-library-catalog" target="17" />
+      <module name="rbc-library-inventory" target="17" />
       <module name="rbc-library-monolith-jpms" target="1.5" />
       <module name="rbc-library-search" target="17" />
       <module name="rbc-library-user-profiles" target="17" />
@@ -25,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rbc-library" options="-parameters" />
       <module name="rbc-library-catalog" options="-parameters" />
+      <module name="rbc-library-inventory" options="-parameters" />
       <module name="rbc-library-search" options="-parameters" />
       <module name="rbc-library-user-profiles" options="-parameters" />
     </option>

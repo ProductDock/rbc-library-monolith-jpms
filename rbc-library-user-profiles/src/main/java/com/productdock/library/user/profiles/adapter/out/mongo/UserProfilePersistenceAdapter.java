@@ -4,6 +4,7 @@ import com.productdock.library.user.profiles.adapter.out.mongo.mapper.UserProfil
 import com.productdock.library.user.profiles.application.port.out.persistence.UserProfilePersistenceOutPort;
 import com.productdock.library.user.profiles.domain.UserProfile;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -12,6 +13,7 @@ import java.util.UUID;
 
 @Repository
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class UserProfilePersistenceAdapter implements UserProfilePersistenceOutPort {
 
     private UserProfileMongoRepository entityRepository;

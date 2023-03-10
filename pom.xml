@@ -15,6 +15,7 @@
         <module>rbc-library-catalog</module>
         <module>rbc-library-user-profiles</module>
         <module>rbc-library-search</module>
+        <module>rbc-library-inventory</module>
     </modules>
 
 </project>
