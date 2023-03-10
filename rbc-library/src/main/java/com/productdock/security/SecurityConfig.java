@@ -10,6 +10,7 @@ import org.springframework.security.oauth2.client.registration.ClientRegistratio
 import org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.security.web.server.authentication.logout.HttpStatusReturningServerLogoutSuccessHandler;
 import org.springframework.security.web.server.authentication.logout.ServerLogoutSuccessHandler;
 import org.springframework.web.cors.CorsConfiguration;
@@ -29,11 +30,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Value("${security.front-to-gateway.redirect-uri}")
     private String frontRedirectUri;
 
-    @Autowired
-    private ClientRegistrationRepository clientRegistrationRepository;
+    @Autowired                                                       ❷
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        http.addFilterAfter(
+            jwtAuthenticationFilter,
+            BasicAuthenticationFilter.class
+        );
 
          http
                 .cors(c -> c.configurationSource(corsConfigurationSource()))

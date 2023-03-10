@@ -5,8 +5,6 @@
 Prbc-library-catalog/src/main/java/com/productdock/adapter/in/web/GetBookApi.java,1/d/1d72758b4e7268122bd77a154cf536b753ec7dac
 ‰
 Yrbc-library-catalog/src/main/java/com/productdock/adapter/in/web/CreateBookReviewApi.java,d/f/dfcc3107da86ffcc72e9d9162ce2b5a22865f832
-•
-erbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/domain/UserProfile.java,e/b/ebb2e3071fe9f438b1ed486de06e5b5d5052c0d7
 œ
 lrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/config/coverage/Generated.java,b/8/b84d9df5aab456c297f0381a9f180a24bcf239e9
 ³
@@ -33,18 +31,12 @@ srbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/a
 xrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/config/UserProfileAuthenticationToken.java,f/4/f4788948bbff854bc2b5de0df3a8c7a0b6cfaafe
 ž
 nrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/config/UserProfileJwtIssuer.java,d/7/d71efe71f641449c7dbe4449a7cf0dfe9d73fd8c
-¬
-|rbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/config/UserProfileAuthenticationConvertor.java,6/6/660304399e5f9e8d8dc8ae04d1f3332b449b2c50
 ©
 yrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/adapter/in/web/ExecuteTokenExchangeApi.java,2/7/271f320e20a5270461880fa1a3530173d23f579d
 ¡
 qrbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/adapter/in/web/LoggedInUserDto.java,0/2/022fb9078d0c20eb5ce10560971c9930b3615645
- 
-prbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/adapter/in/web/UserProfileDto.java,4/1/412a7c97a9719dfec9f17b51a5e01fa429617673
 Q
 !rbc-library-user-profiles/pom.xml,a/e/ae902f364e48871ab5a8d1e372d3866f270d26dd
-v
-Frbc-library/src/main/java/com/productdock/security/SecurityConfig.java,9/6/968cc713d7deade003a64a3a5978c7c77a43fce8
 £
 srbc-library-user-profiles/src/main/java/com/productdock/library/user/profiles/adapter/in/web/GetUserProfileApi.java,2/c/2cfa2d736e09ce495777a612d5810b4911cdb1ed
 £
