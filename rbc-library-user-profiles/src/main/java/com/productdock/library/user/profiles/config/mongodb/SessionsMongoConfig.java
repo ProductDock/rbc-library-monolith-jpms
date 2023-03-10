@@ -1,5 +1,6 @@
 package com.productdock.library.user.profiles.config.mongodb;
 
+import com.productdock.library.user.profiles.adapter.out.mongo.UserProfileMongoRepository;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "org.springframework.session.data.mongo",
+@EnableMongoRepositories(basePackageClasses = UserProfileMongoRepository.class,
         mongoTemplateRef = SessionsMongoConfig.MONGO_TEMPLATE)
 public class SessionsMongoConfig {
 

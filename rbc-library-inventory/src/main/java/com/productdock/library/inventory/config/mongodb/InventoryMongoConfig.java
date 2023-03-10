@@ -1,6 +1,6 @@
 package com.productdock.library.inventory.config.mongodb;
 
-import lombok.RequiredArgsConstructor;
+import com.productdock.library.inventory.adapter.out.mongo.InventoryRecordRepository;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.productdock.library.inventory.adapter.out.mongo",
+@EnableMongoRepositories(basePackageClasses = InventoryRecordRepository.class ,
         mongoTemplateRef = InventoryMongoConfig.MONGO_TEMPLATE)
 public class InventoryMongoConfig {
 
