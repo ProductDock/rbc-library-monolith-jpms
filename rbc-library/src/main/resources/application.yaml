@@ -2,11 +2,11 @@ spring.autoconfigure.exclude: org.springframework.boot.autoconfigure.mongo.Mongo
 
 mongodb:
   rental:
-    uri: mongodb://root:root1@localhost:28017/rental?authSource=rental
+    uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_SERVER_URL}:${MONGO_SERVER_PORT}/rental?authSource=rental
   inventory:
-    uri: mongodb://root:root1@localhost:28017/inventory?authSource=inventory
+    uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_SERVER_URL}:${MONGO_SERVER_PORT}/inventory?authSource=inventory
   sessions:
-    uri: mongodb://root:root1@localhost:28017/sessions?authSource=sessions
+    uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_SERVER_URL}:${MONGO_SERVER_PORT}/sessions?authSource=sessions
 spring:
   security:
     oauth2:
@@ -22,15 +22,6 @@ spring:
       sql:
         database-name: catalog
         instance-connection-name: ${GCP_SQL_INSTANCE_CONNECTION_NAME}
-  #User Profiles#
-#  data:
-#    mongodb:
-#      authentication-database: user-profiles
-#      host: ${MONGO_SERVER_URL}
-#      port: ${MONGO_SERVER_PORT}
-#      username: ${MONGO_USERNAME}
-#      password: ${MONGO_PASSWORD}
-#      database: user-profiles
   #User Profiles#
   flyway:
     user: ${MYSQL_USERNAME}

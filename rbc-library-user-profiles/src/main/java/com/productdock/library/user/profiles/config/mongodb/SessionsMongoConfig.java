@@ -1,6 +1,5 @@
 package com.productdock.library.user.profiles.config.mongodb;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -9,10 +8,14 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@RequiredArgsConstructor
-public class MongoConfig {
+@EnableMongoRepositories(basePackages = "org.springframework.session.data.mongo",
+        mongoTemplateRef = SessionsMongoConfig.MONGO_TEMPLATE)
+public class SessionsMongoConfig {
+
+    protected static final String MONGO_TEMPLATE = "sessionsMongoTemplate";
 
     @Primary
     @Bean(name = "sessionsDbProperties")
@@ -22,14 +25,14 @@ public class MongoConfig {
     }
 
     @Primary
-    @Bean(name = SessionsDbMongoConfig.MONGO_TEMPLATE)
+    @Bean(name = MONGO_TEMPLATE)
     public MongoTemplate sessionsMongoTemplate() {
-        return new MongoTemplate(primaryFactory(getSessionsProperties()));
+        return new MongoTemplate(sessionsDbFactory(getSessionsProperties()));
     }
 
     @Bean
     @Primary
-    public MongoDatabaseFactory primaryFactory(final MongoProperties mongo) {
+    public MongoDatabaseFactory sessionsDbFactory(final MongoProperties mongo) {
         return new SimpleMongoClientDatabaseFactory(mongo.getUri());
     }
 

@@ -10,11 +10,11 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("inventoryKafkaConsumer")
 @Slf4j
-public record InventoryKafkaConsumer(UpdateBookStockUseCase updateBookStockUseCase,
-                                     BookRentalsMapper bookRentalsMapper,
-                                     ObjectMapper objectMapper) {
+public record KafkaConsumer(UpdateBookStockUseCase updateBookStockUseCase,
+                            BookRentalsMapper bookRentalsMapper,
+                            ObjectMapper objectMapper) {
 
     @KafkaListener(topics = "${spring.kafka.topic.book-status}", groupId = "${kafka-consumer-factory.group-id.search}")
     public synchronized void listen(ConsumerRecord<String, String> message) throws JsonProcessingException {

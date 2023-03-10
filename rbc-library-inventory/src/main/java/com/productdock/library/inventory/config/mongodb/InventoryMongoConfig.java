@@ -8,10 +8,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoClientDatabaseFactory;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@RequiredArgsConstructor
+@EnableMongoRepositories(basePackages = "com.productdock.library.inventory.adapter.out.mongo",
+        mongoTemplateRef = InventoryMongoConfig.MONGO_TEMPLATE)
 public class InventoryMongoConfig {
+
+    protected static final String MONGO_TEMPLATE = "inventoryMongoTemplate";
 
     @Bean(name = "inventoryDbProperties")
     @ConfigurationProperties(prefix = "mongodb.inventory")
@@ -19,13 +23,13 @@ public class InventoryMongoConfig {
         return new MongoProperties();
     }
 
-    @Bean(name = InventoryDbMongoConfig.MONGO_TEMPLATE)
+    @Bean(name = MONGO_TEMPLATE)
     public MongoTemplate inventoryMongoTemplate() {
-        return new MongoTemplate(secondaryFactory(getInventoryProperties()));
+        return new MongoTemplate(inventoryDbFactory(getInventoryProperties()));
     }
 
     @Bean
-    public MongoDatabaseFactory secondaryFactory(final MongoProperties mongo) {
+    public MongoDatabaseFactory inventoryDbFactory(final MongoProperties mongo) {
         return new SimpleMongoClientDatabaseFactory(mongo.getUri());
     }
 
